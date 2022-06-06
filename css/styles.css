@@ -152,7 +152,7 @@ ul {
   border-bottom: 1px solid var(--header-border-color);
 }
 
-.basement-logo__brightness-theme {
+.basement__logo--brightness-theme {
   color: var(--white-color);
 }
 
@@ -270,7 +270,7 @@ ul {
 
 /*footer*/
 
-.physical-address {
+.basement__physical-address {
   margin-top: 0;
   margin-bottom: 9px;
 
@@ -278,35 +278,36 @@ ul {
   font-style: normal;
 }
 
-.footer-container {
+.basement__container {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
 }
 
-.footer-nav .link {
+.basement__link {
   color: var(--footer-links-color);
 
   transition: color var(--animation-time) var(--animation-time-distribution);
 }
 
-.footer-nav li:not(:last-child){
+.basement__item li:not(:last-child){
   margin-bottom: 9px;
 }
 
-.footer-nav .link:hover,
-.footer-nav .link:focus {
+.basement__link:hover,
+.basement__link:focus {
   color: var(--accent-color);
 }
-.basement-logo {
+.basement__logo {
   margin-bottom: 20px;
 }
 
-.contacts {
-  display: block;
+.social-block{
+  margin-left: 70px;
+  padding-top: 12px;
 }
 
-.footer-social .link-social{
+.social-block__link{
   display: flex;
   width: 44px;
   height: 44px;
@@ -318,16 +319,16 @@ ul {
   transition: background-color var(--animation-time) var(--animation-time-distribution);
 }
 
-.footer-social .link-social:not(:last-child){
+.social-block__link:not(:last-child){
   margin-right: 10px;
 }
 
-.footer-social .link-social:hover,
-.footer-social .link-social:focus{
+.social-block__link:hover,
+.social-block__link:focus{
   background-color: var(--accent-color);
 }
 
-.join{
+.social-block__urge{
   margin-top: 0;
   margin-bottom: 20px;
   color: var(--white-color);
@@ -336,9 +337,9 @@ ul {
   text-transform: uppercase;
 }
 
-.footer-social{
-  margin-left: 70px;
-  padding-top: 12px;
+.social-block__wrapper{
+  display: flex;
+  justify-content: center;
 }
 
 .form-connection{
@@ -350,12 +351,12 @@ ul {
   text-transform: uppercase;
 }
 
-.form-connection label{
+.form-connection__label {
   display: block;
   margin-bottom: 20px;
 }
 
-.form-connection .sign-input{
+.form-connection__input {
   margin-right: 12px;
   min-width: 360px;
   padding: 15px 0px 15px 16px;
@@ -375,11 +376,11 @@ ul {
   transition: border-color var(--animation-time) var(--animation-time-distribution);
 }
 
-.form-connection .sign-input:focus{
+.form-connection__input:focus{
   border-color: var(--accent-color);
 }
 
-.form-connection .sign-input::placeholder{
+.form-connection__input::placeholder{
  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -388,17 +389,17 @@ ul {
   color: var(--footer-links-color); 
 }
 
-.form-connection button{
+.form-connection__button{
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.sign-ic-plane{
+.form-connection__button--icon {
   margin-left: 10px;
 }
 
-.footer-form-wrapper{
+.form-connection__wrapper {
   display: flex;
 }
 
@@ -414,13 +415,6 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-}
-
-.button {
-  display: inline-block;
-  padding-left: 31px;
-  padding-right: 31px;
-  text-align: center;
 }
 
 /*advantages*/
@@ -867,7 +861,7 @@ ul {
   background-color: #fff;
 }
 
-.modal-urge{
+.modal__urge{
   display: block;
   margin-top: 0;
   margin-bottom: 12px;
@@ -886,7 +880,7 @@ ul {
   transform: scale(0.3);
 }
 
-.modal-button-close{
+.modal__close{
   position: absolute;
   display: flex;
   width: 30px;
@@ -904,23 +898,23 @@ ul {
   transition: fill var(--animation-time) var(--animation-time-distribution);
 }
 
-.modal-button-close:hover,
-.modal-button-close:focus{
+.modal__close:hover,
+.modal__close:focus{
   fill: var(--accent-color);
 }
 
-.form-fild{
+.modal__form-fild{
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.add-comment{
+.modal__form-fild--add-comment{
   margin-bottom: 25px;
 }
 
-.add-comment textarea{
+.modal__textarea {
   width: 100%;
   max-height: 120px;
   padding: 12px 16px;
@@ -938,11 +932,11 @@ ul {
   transition: border-color var(--animation-time) var(--animation-time-distribution);
 }
 
-.add-comment textarea::placeholder{
+.modal__textarea::placeholder{
   color: rgba(117, 117, 117, 0.5);
 }
 
-.form-fild input{
+.modal__input{
   padding-left: 42px;
   min-height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -951,17 +945,17 @@ ul {
   transition: border-color var(--animation-time) var(--animation-time-distribution);
 }
 
-.form-fild input:focus,
-.form-fild textarea:focus {
+.modal__input:focus,
+.modal__textarea:focus {
   border-color: var(--accent-color);
   outline: none;
 }
 
-.form-fild input:focus + .form-icon{
+.modal__input:focus + .modal__icon {
   fill: var(--accent-color);
 }
 
-.form-fild label{
+.modal__label {
   margin-bottom: 4px;
   font-size: 12px;
   line-height: 1.17;
@@ -972,23 +966,23 @@ ul {
   margin-bottom: 30px;
 }
 
-.acceptance-box a{
+.acceptance-box__link {
   color: var(--accent-color);
   margin-left: 3px;
   text-decoration-line: underline;
 }
 
-.acceptance-box a:hover{
+.acceptance-box__link:hover {
   text-decoration-line: none;
 }
 
-.modal .button{
+.modal__button {
   display: block;
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.form-icon{
+.modal__icon {
   left: 15px;
   top: 29px;
   position: absolute;
@@ -996,44 +990,44 @@ ul {
   transition: fill var(--animation-time) var(--animation-time-distribution);
 }
 
-.acceptance-box input{
+.acceptance-box__input {
   appearance: none;
   position: absolute;
 }
 
-.acceptance-box label{
+.acceptance-box__label {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.acceptance-box svg{
+.acceptance-box__svg {
   margin-right: 8px;
 }
 
-.acceptance-box input:checked + .border{
+.acceptance-box__input:checked + .acceptance-box__svg--non-checked {
   opacity: 0;
 }
 
-.acceptance-box .border{
+.acceptance-box__input:checked ~ .acceptance-box__svg--checked{
+  opacity: 1;
+}
+
+.acceptance-box__input:focus + .acceptance-box__svg--non-checked {
+  fill: var(--accent-color);
+}
+
+.acceptance-box__svg--non-checked{
   transition: opacity var(--animation-time) var(--animation-time-distribution), fill var(--animation-time) var(--animation-time-distribution);
 }
 
-.acceptance-box .check{
+.acceptance-box__svg--checked {
   position: absolute;
   top: 50%;
   left: 0;
   opacity: 0;
   transform: translateY(-50%);
   transition: opacity var(--animation-time) var(--animation-time-distribution);
-}
-
-.acceptance-box input:checked ~ .check{
-  opacity: 1;
-}
-
-.acceptance-box input:focus + .border{
-  fill: var(--accent-color);
 }
 
 /* .box{

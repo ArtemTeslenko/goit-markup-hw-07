@@ -317,36 +317,40 @@
       </div>
     </section>
     <footer class="basement">
-      <div class="container footer-container">
+      <div class="container basement__container">
         <div class="basement__contacts">
-          <a href="#" class="logo basement-logo"
-            >Web<span class="basement-logo__brightness-theme">Studio</span></a
+          <a href="#" class="logo basement__logo"
+            >Web<span class="basement__logo--brightness-theme">Studio</span></a
           >
-          <address class="footer-nav">
-            <p class="physical-address">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="list">
-              <li><a href="mailto:info@example.com" class="link contacts">info@example.com</a></li>
-              <li><a href="tel:+380991111111" class="link contacts">+38 099 111 11 11</a></li>
+          <address class="">
+            <p class="basement__physical-address">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="">
+              <li class="basement__item">
+                <a href="mailto:info@example.com" class="basement__link">info@example.com</a>
+              </li>
+              <li class="basement__item">
+                <a href="tel:+380991111111" class="basement__link">+38 099 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
-        <div class="footer-social">
-          <p class="join">присоединяйтесь</p>
-          <div class="social-wrapper">
-            <a href="" class="link link-social">
-              <svg class="linc-ic-social" width="20px" height="20px">
+        <div class="social-block">
+          <p class="social-block__urge">присоединяйтесь</p>
+          <div class="social-block__wrapper">
+            <a href="" class="social-block__link">
+              <svg class="" width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-instagram"></use>
               </svg> </a
-            ><a href="" class="link link-social">
-              <svg class="linc-ic-social" width="20px" height="20px">
+            ><a href="" class="social-block__link">
+              <svg class="" width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-twitter"></use>
               </svg> </a
-            ><a href="" class="link link-social">
-              <svg class="linc-ic-social" width="20px" height="20px">
+            ><a href="" class="social-block__link">
+              <svg class="" width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-facebook"></use>
               </svg> </a
-            ><a href="" class="link link-social">
-              <svg class="linc-ic-social" width="20px" height="20px">
+            ><a href="" class="social-block__link">
+              <svg class="" width="20px" height="20px">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
               </svg>
             </a>
@@ -354,17 +358,17 @@
         </div>
 
         <form action="" class="form-connection">
-          <label for="footer-mail">Подпишитесь на рассылку</label>
-          <div class="footer-form-wrapper">
+          <label class="form-connection__label" for="footer-mail">Подпишитесь на рассылку</label>
+          <div class="form-connection__wrapper">
             <input
-              class="sign-input"
+              class="form-connection__input"
               type="email"
               id="footer-mail"
               placeholder="E-mail"
               name="user-email"
             />
-            <button class="common-button" type="submit">
-              Подписаться<svg class="sign-ic-plane" width="24px" height="24px">
+            <button class="button form-connection__button" type="submit">
+              Подписаться<svg class="form-connection__button--icon" width="24px" height="24px">
                 <use href="./images/symbol-defs.svg#icon-paper-plane"></use>
               </svg>
             </button>
@@ -375,40 +379,41 @@
 
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="modal-button-close">
+        <button data-modal-close class="modal__close">
           <svg width="18px" height="18px">
             <use href="./images/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
-        <p class="modal-urge">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal__urge">Оставьте свои данные, мы вам перезвоним</p>
         <form action="">
-          <div class="form-fild">
-            <label for="name">Имя</label>
-            <input type="text" name="user-name" id="name" />
-            <svg class="form-icon human" width="18px" height="18px">
+          <div class="modal__form-fild">
+            <label class="modal__label" for="name">Имя</label>
+            <input class="modal__input" type="text" name="user-name" id="name" />
+            <svg class="modal__icon" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-person-afro"></use>
             </svg>
           </div>
 
-          <div class="form-fild">
-            <label for="phone">Телефон</label>
-            <input type="tel" name="user-phone" id="phone" />
-            <svg class="form-icon phone" width="18px" height="18px">
+          <div class="modal__form-fild">
+            <label class="modal__label" for="phone">Телефон</label>
+            <input class="modal__input" type="tel" name="user-phone" id="phone" />
+            <svg class="modal__icon" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-phone-black"></use>
             </svg>
           </div>
 
-          <div class="form-fild">
-            <label for="mail">Почта</label>
-            <input type="email" name="user-email" id="mail" />
-            <svg class="form-icon envelope" width="18px" height="18px">
+          <div class="modal__form-fild">
+            <label class="modal__label" for="mail">Почта</label>
+            <input class="modal__input" type="email" name="user-email" id="mail" />
+            <svg class="modal__icon" width="18px" height="18px">
               <use href="./images/symbol-defs.svg#icon-email-black"></use>
             </svg>
           </div>
 
-          <div class="form-fild add-comment">
+          <div class="modal__form-fild modal__form-fild--add-comment">
             <label for="add">Комментарий</label>
             <textarea
+              class="modal__textarea"
               name="additional"
               id="add"
               cols="30"
@@ -418,20 +423,29 @@
           </div>
 
           <div class="acceptance-box">
-            <label>
-              <input type="checkbox" name="acceptance" />
+            <label class="acceptance-box__label">
+              <input class="acceptance-box__input" type="checkbox" name="acceptance" />
               <!-- <span class="box"></span> -->
-              <svg class="border" width="16px" height="15px">
+              <svg
+                class="acceptance-box__svg acceptance-box__svg--non-checked"
+                width="16px"
+                height="15px"
+              >
                 <use href="./images/symbol-defs.svg#icon-border"></use>
               </svg>
-              <svg class="check" width="16px" height="15px">
+              <svg
+                class="acceptance-box__svg acceptance-box__svg--checked"
+                width="16px"
+                height="15px"
+              >
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
-              Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
+              Соглашаюсь с рассылкой и принимаю
+              <a class="acceptance-box__link" href="">Условия договора</a></label
             >
           </div>
 
-          <button class="common-button" type="submit">Отправить</button>
+          <button class="button modal__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
