@@ -51,7 +51,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.heading__visually-hidden {
+.heading--visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -290,7 +290,7 @@ ul {
   transition: color var(--animation-time) var(--animation-time-distribution);
 }
 
-.basement__item li:not(:last-child){
+.basement__item:not(:last-child){
   margin-bottom: 9px;
 }
 
@@ -664,7 +664,7 @@ ul {
   justify-content: center;
 }
 
-.filter .button {
+.filter__button {
   padding: 6px 22px;
 
   color: var(--interim-heading-color);
@@ -681,13 +681,13 @@ ul {
   transition: color var(--animation-time) var(--animation-time-distribution), background-color var(--animation-time) var(--animation-time-distribution), box-shadow var(--animation-time) var(--animation-time-distribution);
 }
 
-.filter .item:not(:last-child){
+.filter__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filter .button:hover,
-.filter .button:focus,
-.filter .current-filter {
+.filter__button:hover,
+.filter__button:focus,
+.filter__button--current {
   color: var(--white-color);
   background-color: var(--accent-color);
 
@@ -698,12 +698,13 @@ ul {
 
 /*portfolio work examples*/
 
-.main-portfolio{
+.portfolio{
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.examples .heading {
+.examples__heading {
+  margin-top: 0;
   margin-bottom: 4px;
   text-align: left;
 
@@ -713,14 +714,14 @@ ul {
   letter-spacing: 0.06em;
 }
 
-.examples{
+.examples {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.examples .work-type {
+.examples__work-type {
   margin: 0;
 
   font-family: 'Roboto', sans-serif;
@@ -730,43 +731,39 @@ ul {
   letter-spacing: 0.03em;
 }
 
-.example-img{
+.examples__img{
   display: block;
   width: 100%;
 }
 
-.example-item a{
+.examples__link{
   display: block;
   text-decoration: none;
 
   transition: box-shadow var(--animation-time) var(--animation-time-distribution);
 }
 
-.example-item{
+.examples__item {
   display: block;
   flex-basis: calc((100% - 90px)/3);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.example-item a:hover,
-.example-item a:focus{
+.examples__link:hover,
+.examples__link:focus{
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
   0px 4px 4px rgba(0, 0, 0, 0.06), 
   1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.example-item a:hover .description-wrapper,
-.example-item a:focus .description-wrapper{
+.examples__link:hover .examples__description-wrapper,
+.examples__link:focus .examples__description-wrapper {
   opacity: 1;
   transform: translateY(0);
 }
 
-.example-item a .description-wrapper{
-  transition: opacity var(--animation-time) var(--animation-time-distribution), transform var(--animation-time) var(--animation-time-distribution);
-}
-
-.example-wrapper{
+.examples__wrapper{
   padding-top: 20px;
   padding-left: 24px;
   padding-bottom: 20px;
@@ -776,13 +773,13 @@ ul {
   border-right: 1px solid var(--examples-berder-color);
 }
 
-.thumb{
+.examples__thumb {
   position: relative;
   overflow: hidden;
   align-items: center;
 }
 
-.description-wrapper{
+.examples__description-wrapper {
   display: flex;
   position: absolute;
   height: 100%;
@@ -796,46 +793,16 @@ ul {
   background: rgba(33, 150, 243, 0.9);
 
   transform: translateY(102%);
+  transition: opacity var(--animation-time) var(--animation-time-distribution), transform var(--animation-time) var(--animation-time-distribution);
 }
 
-.example-description{
-  /* position: absolute;
-  display: inline-block;
-  height: 100%;
-  top: 0;
-  left: 0; */
+.examples__description{
   margin: 0;
-  /* padding-left: 24px;
-  padding-right: 24px; */
 
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.55;
-  /* background: rgba(33, 150, 243, 0.9);
-
-  transform: translateY(100%); */
 }
-
-/* .thumb{
-  position: relative;
-}
-
-.thumb::before{
-  content: '';
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  background: rgba(33, 150, 243, 0.9); 
-  opacity: 0;
-}
-
-.example-item a:hover::before,
-.example-item a:focus::before{
-  opacity: 1;
-} */
-
 
 /* ----------MODAL---------- */
 .backdrop{
@@ -849,7 +816,7 @@ ul {
   transition: opacity 250ms var(--animation-time-distribution), transform 250ms var(--animation-time-distribution), visibility 250ms var(--animation-time-distribution);
 }
 
-.modal{
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -861,7 +828,7 @@ ul {
   background-color: #fff;
 }
 
-.modal__urge{
+.modal__urge {
   display: block;
   margin-top: 0;
   margin-bottom: 12px;
