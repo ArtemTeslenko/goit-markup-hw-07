@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+  margin-right: 93px;
+
+  color: map-get($colors, accent);
+  font-family: $interim-font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header__logo--brightness-theme {
+  color: map-get($colors, main-heading);
+}
+
+.basement__logo--brightness-theme {
+  color: map-get($colors, interim-heading);
+}

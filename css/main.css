@@ -1,1 +1,30 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.page-header {
+  border-bottom: 1px solid #ececec;
+}
+
+.logo {
+  display: block;
+  margin-right: 93px;
+  color: #2196f3;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.header__logo--brightness-theme {
+  color: #212121;
+}
+
+.basement__logo--brightness-theme {
+  color: #ffffff;
+}
+/*# sourceMappingURL=main.css.map */

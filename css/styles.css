@@ -143,17 +143,17 @@ ul {
   text-decoration: none;
 }
 
-.page-header .logo > span {
+.header__logo--brightness-theme {
   color: var(--black-color);
   background-color: var(--white-color);
 }
 
-.page-header{
-  border-bottom: 1px solid var(--header-border-color);
-}
-
 .basement__logo--brightness-theme {
   color: var(--white-color);
+}
+
+.page-header{
+  border-bottom: 1px solid var(--header-border-color);
 }
 
 /*Logo*/
