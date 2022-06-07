@@ -12,3 +12,7 @@ $interim-font-family: 'Raleway', sans-serif;
 $main-font-size: 14px;
 $main-line-height: 1.71;
 $main-letter-spacing: 0.03em;
+
+@mixin effectsTiming($property) {
+  transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

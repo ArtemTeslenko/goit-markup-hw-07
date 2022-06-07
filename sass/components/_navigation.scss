@@ -1,0 +1,45 @@
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__menu {
+  display: flex;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.navigation__link {
+  display: block;
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: map-get($colors, main-heading);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @include effectsTiming(color);
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent);
+  }
+}
+
+.navigation__link--current {
+  color: map-get($colors, accent);
+  &::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    background-size: contain;
+    background-color: map-get($colors, accent);
+    border-radius: 2px;
+  }
+}

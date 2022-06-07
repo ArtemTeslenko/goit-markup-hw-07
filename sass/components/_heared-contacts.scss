@@ -1,0 +1,32 @@
+.page-header__contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.page-header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.page-header__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  color: map-get($colors, main-text);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @include effectsTiming(color);
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent);
+  }
+}
+
+.page-header__icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
