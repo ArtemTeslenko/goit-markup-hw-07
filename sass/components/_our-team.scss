@@ -60,7 +60,7 @@
   fill: map-get($colors, icons-default);
   border-radius: 50%;
 
-  @include effectsTiming(background-color, fill);
+  @include effectsTiming((fill, background-color));
 
   &:hover,
   &:focus {
