@@ -18,3 +18,8 @@
 .basement__logo--brightness-theme {
   color: map-get($colors, interim-heading);
 }
+
+.basement__logo {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
