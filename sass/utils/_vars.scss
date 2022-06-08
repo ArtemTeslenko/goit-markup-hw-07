@@ -2,9 +2,13 @@ $colors: (
   'main-text': #757575,
   'accent': #2196f3,
   'main-background': #ffffff,
+  'interim-background': #f5f4fa,
+  'dark-background': #2f303a,
   'main-heading': #212121,
   'interim-heading': #ffffff,
   'main-border': #ececec,
+  'button-accent': #188ce8,
+  'icons-default': #afb1b8,
 );
 
 $main-font-family: 'Roboto', sans-serif;
@@ -12,6 +16,7 @@ $interim-font-family: 'Raleway', sans-serif;
 $main-font-size: 14px;
 $main-line-height: 1.71;
 $main-letter-spacing: 0.03em;
+$main-text-color: map-get($colors, main-text);
 
 @mixin effectsTiming($property) {
   transition: $property 250ms cubic-bezier(0.4, 0, 0.2, 1);
