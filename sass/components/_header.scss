@@ -1,7 +1,40 @@
-.page-header {
+.header {
   border-bottom: 1px solid map-get($colors, main-border);
 }
 
-.page-header__container {
+.header__container {
   display: flex;
+}
+
+.header__contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header__link {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+
+  color: map-get($colors, main-text);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  @include effectsTiming(color);
+
+  &:hover,
+  &:focus {
+    color: map-get($colors, accent);
+  }
+}
+
+.header__icon {
+  margin-right: 10px;
+  fill: currentColor;
 }

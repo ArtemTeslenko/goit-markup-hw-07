@@ -18,9 +18,3 @@ $main-font-size: 14px;
 $main-line-height: 1.71;
 $main-letter-spacing: 0.03em;
 $main-text-color: map-get($colors, main-text);
-
-@mixin effectsTiming($property, $duration: 250ms, $function: cubic-bezier(0.4, 0, 0.2, 1)) {
-  transition-property: $property;
-  transition-duration: $duration;
-  transition-timing-function: $function;
-}
